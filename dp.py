@@ -43,7 +43,13 @@ cursor.execute(
         areas_topic_help TEXT
     );
     """
+
+
 )
+
+
+cursor.execute(
+    """ALTER TABLE students rename COLUMN genter TO gender;""")
 
 
 # Save changes

@@ -21,4 +21,8 @@ class_grade=input("enter your class grade: ")
 board=input("enter your board curriculum: ")
 academic_year=input("enter your academic year: ")
 
-s1.set_student_details(name, date_of_birth, age, gender, mobile, language, school, class_grade, board, academic_year)
+#set student details
+s1.set_student_details(name,date_of_birth, age, gender, mobile, language, school, class_grade, board, academic_year)
+
+#save student details to database
+s1.save_basic_details_to_db()
